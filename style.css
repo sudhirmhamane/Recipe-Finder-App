@@ -11,6 +11,16 @@ body {
 }
 
 
+.styled-hr {
+    border: none;
+    height: 2px;
+    background-color: #1e90ff;
+    margin: 20px 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body::-webkit-scrollbar {
     width: 16px;
 }
@@ -20,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track{
-    background: rgb(189, 60, 0);
+    background: #212121;
 }
 
 header nav {
@@ -233,13 +243,97 @@ form button[type="submit"]:hover,.recipe button:hover{
 }
 
 
+/* indian food  */
+
+.popular-indian-dishes  h2{
+    margin-top: 45px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.popular-indian-dishes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .dish-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20;
+}
+.dish-info {
+    background-color: #fff;
+    color: #000;
+    width: 22%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    height: max-content;
+} */
+
+.dish-cards {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Individual dish info card styling */
+.dish-info {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    height: 430px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #000;
+    margin-bottom: 20px;
+    transition: transform 0.4s;
+}
+
+.dish-info:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.6);
+}
+
+.dish-info img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dish-info h3 {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dish-info p {
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+}
+
 /* documentation part */
 
 
 .doc-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
@@ -248,27 +342,26 @@ form button[type="submit"]:hover,.recipe button:hover{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 350px; /* Fixed width for cards */
-    transition: transform 0.2s;
+    width: 320px;
+    transition: transform 0.4s;
 }
 
 .doc-card:hover {
     transform: scale(1.02);
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.6);
 }
 
 .mixed-documentation {
-    padding: 20px;
+    padding: 10px;
     color: #000000;
     margin-top: 85px;
     cursor: pointer;
 }
 
 .mixed-documentation h2 {
-    
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: -35px;
     margin-bottom: 30px;
     color: #fff;
@@ -280,17 +373,18 @@ form button[type="submit"]:hover,.recipe button:hover{
 }
 
 .mixed-documentation p {
+    font-size: 15px;
     margin: 10px 0;
-    line-height: 1.6; /* Improved readability */
+    line-height: 1.5;
 }
 
 .mixed-documentation a {
-    color: #2980b9; /* Link color */
+    color: #2980b9;
     text-decoration: none;
 }
 
 .mixed-documentation a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
+    text-decoration: underline;
 }
 
 /* ends */
@@ -337,6 +431,7 @@ form button[type="submit"]:hover,.recipe button:hover{
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 10px;
     font-size: 1em;
+    margin-bottom: -20px;
 }
 
 
@@ -371,6 +466,110 @@ form button[type="submit"]:hover,.recipe button:hover{
     .intro {
         background: url('https://images.unsplash.com/photo-1546069901-eacef0df6022?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400') center/cover no-repeat;
     }
+
+
+
+    .recipe-container h2 {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-bottom: -20px;
+    }
+
+    .recipe {
+        margin-right: 50px;
+    }
+
+    .recipe-container h2 {
+        margin-right: 35px;
+    }
+
+    .recipe-details {
+        width: 330px;
+    }
+
+
+    .racipeh3 {
+        font-size: 20px;
+    }
+
+    .recipeInstructions h3 {
+        font-size: 20px;
+    }
+    .recipeName {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    
+    .ingredientList li {
+        font-size: 16px;
+
+    }
+    
+    .recipeInstructions p {
+        font-size: 16px;
+        white-space: pre-line;
+    }
+    .recipeName,
+    .ingredientList,
+    .recipeInstructions{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    
+    .recipe-container h2 {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-bottom: -20px;
+    }
+
+    .recipe {
+        margin-right: 50px;
+    }
+
+    .recipe-container h2 {
+        margin-right: 35px;
+    }
+
+    .recipe-details {
+        width: 330px;
+    }
+
+
+    .racipeh3 {
+        font-size: 20px;
+    }
+
+    .recipeInstructions h3 {
+        font-size: 20px;
+    }
+    .recipeName {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    
+    .ingredientList li {
+        font-size: 16px;
+
+    }
+    
+    .recipeInstructions p {
+        font-size: 16px;
+        white-space: pre-line;
+    }
+    .recipeName,
+    .ingredientList,
+    .recipeInstructions{
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -395,6 +594,32 @@ form button[type="submit"]:hover,.recipe button:hover{
         background: url('https://images.unsplash.com/photo-1546069901-eacef0df6022?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400') center/cover no-repeat;
     }
 
+    
+    .mixed-documentation {
+        width: 320px;
+        margin-left: 22px;
+    }
+
+
+    .mixed-documentation h2 {
+        font-size: 18px;
+        margin-top: -90px;
+    }
+
+    .mixed-documentation h3 {
+        font-size: 15px;
+    }
+
+    .mixed-documentation p {
+        font-size: 13px;
+    }
+
+    .recipe-container h2 {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-bottom: -20px;
+    }
+
     .recipe {
         margin-right: 50px;
     }
@@ -403,14 +628,65 @@ form button[type="submit"]:hover,.recipe button:hover{
         margin-right: 35px;
     }
 
+    .recipe-details {
+        width: 330px;
+    }
+
+
+    .racipeh3 {
+        font-size: 20px;
+    }
+
+    .recipeInstructions h3 {
+        font-size: 20px;
+    }
+    .recipeName {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    
+    .ingredientList li {
+        font-size: 16px;
+
+    }
+    
+    .recipeInstructions p {
+        font-size: 16px;
+        white-space: pre-line;
+    }
+    .recipeName,
+    .ingredientList,
+    .recipeInstructions{
+        margin-bottom: 10px;
+    }
+
     .doc-card {
         padding: 20px;
         width: 300px;
     }
 
-    .mixed-documentation h2 {
-        font-size: 24px;
+    .popular-indian-dishes h2 {
+        margin-top: -5px;
+        margin-bottom: 40px;
+        font-size: 17px;
     }
+
+
+    .dish-info {
+        width: 280px;
+        height: 380px;
+        padding: 7px;
+    }
+    .dish-info p{
+        font-size: 13px;
+    }
+    .dish-info h3 {
+        font-size: 16px;
+    }
+
+
     .footer-content h2 {
         font-size: 20px;
     }

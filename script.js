@@ -99,6 +99,8 @@ const recipe_Close_Btn = document.querySelector(".recipeCloseBtn");
 const recipe_Details_Content = document.querySelector(".recipe-details-content");
 const introSection = document.querySelector('.intro');
 const mixed_Documentation = document.querySelector('.mixed-documentation');
+const styled_hr = document.querySelector('.styled-hr');
+const popular_indian_dishes = document.querySelector('.popular-indian-dishes');
 
 const fetchRecipe = async (query) => {
     recipe_Container.innerHTML = "<h2>Hey wait,Recipes are Starting to Fetch...</h2>";
@@ -112,6 +114,8 @@ const fetchRecipe = async (query) => {
         if (response.meals) {
             introSection.style.display = 'none';
             mixed_Documentation.style.display = "none";
+            styled_hr.style.display = "none";
+            popular_indian_dishes.style.display = "none";
 
             response.meals.forEach(meal => {
                 const recipeDiv = document.createElement('div');
