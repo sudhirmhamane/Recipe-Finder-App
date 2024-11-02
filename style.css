@@ -476,7 +476,7 @@ form button[type="submit"]:hover,.recipe button:hover{
     }
 
     .recipe {
-        margin-right: 50px;
+        margin-left: 25px;
     }
 
     .recipe-container h2 {
@@ -621,7 +621,7 @@ form button[type="submit"]:hover,.recipe button:hover{
     }
 
     .recipe {
-        margin-right: 50px;
+        margin-right: 75px;
     }
 
     .recipe-container h2 {
@@ -697,3 +697,14 @@ form button[type="submit"]:hover,.recipe button:hover{
 
 }
 
+@media (min-width: 366px) and (max-width: 399px) {
+
+
+    .doc-card {
+        margin-left: 20px;
+    }
+
+    .recipe {
+        margin-left: 50px;
+    }
+}
