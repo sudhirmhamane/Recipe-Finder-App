@@ -352,6 +352,12 @@ form button[type="submit"]:hover,.recipe button:hover{
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.6);
 }
 
+.doc-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 5px; 
+}
 .mixed-documentation {
     padding: 10px;
     color: #000000;
@@ -393,7 +399,7 @@ form button[type="submit"]:hover,.recipe button:hover{
 
 .footer {
     margin-top: 80px;
-    background-color: #333; /* Dark background */
+    background-color: #161313; /* Dark background */
     color: white;
     padding: 20px;
     text-align: center;
@@ -404,17 +410,17 @@ form button[type="submit"]:hover,.recipe button:hover{
 }
 
 .footer h2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-bottom: 10px;
 }
 
 .footer p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 0.8em;
 }
 .footer img {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
 }
 
 .social-links {
@@ -424,7 +430,7 @@ form button[type="submit"]:hover,.recipe button:hover{
 
 .social-links li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 12px;
 }
 
 .footer-bottom {
